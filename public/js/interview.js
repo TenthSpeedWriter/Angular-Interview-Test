@@ -11,6 +11,19 @@ angular.module('Interview', ['ui.router'])
         url: '',
         templateUrl: '/render/frontpage/instructions'
       })
+      .state('main.users', {
+        abstract: true,
+        url: 'user/',
+        template: '</ui-view>'
+      })
+      .state('main.users.editableList', {
+        url: 'editableList',
+        templateUrl: 'render/users/editableList'
+      })
+      .state('main.users.pagedList', {
+        url: 'pagedList',
+        templateUrl: 'render/users/pagedList'
+      })
 
     $locationProvider.html5Mode({
       enabled: true,
