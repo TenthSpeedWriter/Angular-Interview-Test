@@ -28,6 +28,7 @@
     "title": "Angular architecture test API documentation."
   },
   "devDependencies": {
+    "angular": "^1.4.7",
     "angular-mocks": "^1.4.7",
     "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
